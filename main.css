@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5vw;
+}
+
+h1,
+h4,
+h5 {
+  color: #cd5334;
+  /* padding: 0; */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .loading {
+  height: 100vh;
+}
+
+a:hover,
+a:focus,
+:active {
+  text-decoration: none !important;
+}
+
+a {
+  transition: 125ms ease-in-out;
+}
+a:hover {
+  transform: scale(1.2);
+  color: #ed746e !important;
+}
+
+p {
+  color: #2e282a;
+}
+
+img {
+  /* display: block; */
+  margin: 12px;
+}
+
+.overlay {
+  z-index: 10;
+}
+
+.nav-bar-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-bar-container a {
+  font-size: 1.5vw;
+  color: #ed746e;
+}
+
+li {
+  padding: 5px;
+}
+
+.nav-bar-container {
+  position: absolute;
+  top: 0;
+}
+
+section .hero {
+  /* border: 2px solid blue; */
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  background-image: url("./assets/land.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+section .my-skills {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .introduction {
+  margin-bottom: 4em;
+}
+
+section .about-me {
+  /* height: 100vh; */
+  font-size: 1.5vw;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+section .about-me p {
+  padding: 1.5rem;
+}
+
+section .about-me img {
+  border-radius: 50%;
+}
+
+section .contact-me {
+  height: 2rem;
+  background-color: #cd5334;
+}
+
+.container-fluid,
+.container {
+  /* border: 2px solid pink; */
+  text-align: center;
+}
+
+.col-md-4 {
+  /* border: 2px solid pink; */
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me {
+  height: 30px;
+  background-color: #cd5334;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  section .about-me {
+    font-size: 4vw;
+  }
+
+  .navbar-nav {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 786) {
+  .about-me img {
+    border: 2px solid #cd5334;
+    font-size: 2vw;
+  }
+}
